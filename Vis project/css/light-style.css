@@ -21,10 +21,11 @@
 
             scroll-snap-align: start;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             font-size: 1.5em;
-            padding: 20px;
+            padding: 0px;
             overflow-y: scroll;
             scroll-snap-align: start;
             -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -49,14 +50,33 @@
            
             
             /* Set the width and height of the div to match the image size */
-            width: 125%; /* adjust to the desired width */
-            height: 100vh; /* adjust to the desired height */
+            width: 100%; /* adjust to the desired width */
+            height: 50vh; /* adjust to the desired height */
+            background: linear-gradient(to top,#04850fd8,#c3e2c676);
 
             
+        }
+        #sec1-1{
+            background: linear-gradient(to bottom,#04850fd8,#f0f0f0);
         }
         #riyad-menu{
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             transition: opacity 0.3s ease;
+        }
+        .dropdown {
+            position: fixed;
+            left: 0;
+            top: 10px; /* Adjust the top position as needed */
+            z-index: 1; /* Ensure the dropdown is above other elements */
+        }
+        
+        /* Style for the dropdown label */
+        .dropdown label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        #para1{
+            text-align:center;
         }
