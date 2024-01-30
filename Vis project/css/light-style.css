@@ -21,7 +21,7 @@
 
             scroll-snap-align: start;
             display: flex;
-            flex-direction: column;
+            flex-direction:column;
             align-items: center;
             justify-content: center;
             font-size: 1.5em;
@@ -57,14 +57,17 @@
             
         }
         #sec1-1{
-            background: linear-gradient(to bottom,#04850fd8,#f0f0f0);
+            background: linear-gradient(to bottom,#04850fd8,#e2efe2);
         }
+        /*Main image*/
         #riyad-menu{
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit:cover;
             transition: opacity 0.3s ease;
         }
+
+        /*styles for the drop down menu in the main page*/
         .dropdown {
             position: fixed;
             left: 0;
@@ -77,6 +80,36 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
+        .dropdown select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #070e13;
+            background-color: #ecf0f1;
+            color: #88a7bb;
+            transition: background-color 0.3s;
+        }
+        
+        /* Hover effect */
+        .dropdown select:hover {
+            background-color: #a9e0f8;
+        }
+        
+        
         #para1{
             text-align:center;
+            padding: 10px;
+            border-radius: 35%;
+            border-style: double;
+            border-color: #75db7dd8;
+        }
+
+        /*styles for the second main page segment*/
+        #section2{
+            flex-direction: row;
+        }
+        /*styles for the image*/
+        #riyad2{
+            object-fit: fill;
+            height: 100vh;
+            
         }
