@@ -51,6 +51,7 @@
             background-color: #e0e0e0;
         }
         #sec1-2  {
+            position: relative;
            
             
             /* Set the width and height of the div to match the image size */
@@ -72,25 +73,34 @@
         }
 
         /*styles for the drop down menu in the main page*/
-        .dropdown {
-            position: fixed;
-            left: 0;
-            top: 10px; /* Adjust the top position as needed */
-            z-index: 1; /* Ensure the dropdown is above other elements */
+        .topnav {
+            background-color: #ece7e7;
+            overflow: hidden;
+            padding: 10px;
+            text-align: center;
         }
         
-        /* Style for the dropdown label */
-        .dropdown label {
-            font-weight: bold;
-            margin-bottom: 5px;
+        .topnav h1 {
+            color: #fff;
+            margin: 0;
         }
+        
+        .dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown label {
+            color: white;
+            margin-right: 10px;
+        }
+        
         .dropdown select {
-            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
             font-size: 16px;
-            border: 1px solid #070e13;
-            background-color: #ecf0f1;
-            color: #88a7bb;
-            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
         }
         
         /* Hover effect */
@@ -116,4 +126,28 @@
             object-fit: fill;
             height: 100vh;
             
+        }
+
+        .buttons-container {
+            position: fixed;
+            top: 100px;
+            right: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+       
+        
+        .dark-mode-button {
+            background-color: #25282b;
+            color: #f0f0f0;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dark-mode-button:hover {
+            background-color: #444444;
         }

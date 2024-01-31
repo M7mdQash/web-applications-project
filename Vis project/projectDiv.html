@@ -9,7 +9,7 @@
     <script>
     
     </script>
-    <title>Single Page with Snap Scrolling</title>
+    <title>Web apps project</title>
 </head>
 
 
@@ -20,21 +20,29 @@
 
 <body>
 <div class="parent" id ="par1">
+    <div class="topnav">
+        <h1>Riyadh Tourism</h1>
+        <div class="dropdown">
+            <label for="menu">Menu:</label>
+            <select id="menu" onchange="navigateToPage(this.value)">
+                <option value="home">Home</option>
+                <option value="riyadh">Riyadh</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+    </div>
+
     <div class="section" id="section1">
         <div class="image" id="sec1-2"> 
             <img id="riyad-menu" src="images/riyad.png" alt="hello and welcome to saudia">
+            <button onclick="toggleDarkMode()">dark mode</button>
 
-            <div class="dropdown">
-                <label for="menu">Menu:</label>
-                <select id="menu">
-                    <option value="home">Home</option>
-                    <!-- Add more options as needed -->
-                </select>
-            </div>
+            
         </div>
         <div class="min-sec" id="sec1-1">
             <p id="para1">this is saudi arabia, welcome to saudi arabia
                 <br> where we have some the best places to tour and some of the most ancient of places
+
             </p>
         </div>
         
@@ -42,6 +50,7 @@
     <div class="section" id="section2">
         <div class="image" id="sec2-2"> 
             <img id="riyad2" src="images/Riyadh2.jpg" alt="hello and welcome to saudia">
+
 
             <div class="dropdown">
                 <label for="menu">Menu:</label>
@@ -55,7 +64,7 @@
             <p id="para1">this is saudi arabia, welcome to saudi arabia
                 <br> where we have some the best places to tour and some of the most ancient of places
                 <br> click <a href="Riyadh.html">here for more info on riyadh</a>~!
-                <button onclick="toggleDarkMode()">dark mode</button>
+
             </p>
             
         </div>
