@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    font-family: Arial, sans-serif;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.dark-mode {
+    background-color: #25282b;
+    color: #f0f0f0;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 0px;
+    overflow-y: scroll;
+    scroll-snap-align: start;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    background-color: #25282b; /* Dark grey background */
+}
+
+/*=== styling for the mini sections inside devs */
+.min-sec {
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    background: linear-gradient(to right, #333333d8, #444444); /* Dark grey gradient */
+}
+
+/* Style for better visibility */
+.section:nth-child(odd) {
+    background-color: #444444;
+}
+
+.section:nth-child(even) {
+    background-color: #333333;
+}
+
+#sec1-2 {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to top, #2d2d2dd8, #55555576); /* Dark grey gradient */
+}
+
+#sec1-1 {
+    background: linear-gradient(to bottom, #2d2d2dd8, #777777); /* Dark grey gradient */
+}
+
+/* Main image */
+#riyad-menu {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Styles for the drop-down menu in the main page */
+.dropdown {
+    position: fixed;
+    left: 0;
+    top: 10px; /* Adjust the top position as needed */
+    z-index: 1; /* Ensure the dropdown is above other elements */
+}
+
+/* Style for the dropdown label */
+.dropdown label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #070e13;
+    background-color: #2d2d2d;
+    color: #88a7bb;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.dropdown select:hover {
+    background-color: #555555;
+}
+
+#para1 {
+    text-align: center;
+    padding: 10px;
+    border-radius: 35%;
+    border-style: double;
+    border-color: #75db7d; /* Adjusted border color */
+}
+
+/* Styles for the second main page segment */
+#section2 {
+    flex-direction: row;
+}
+
+/* Styles for the image */
+#riyad2 {
+    object-fit: fill;
+    height: 100vh;
+}
