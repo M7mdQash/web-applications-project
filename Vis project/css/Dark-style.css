@@ -3,8 +3,10 @@ body {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     font-family: Arial, sans-serif;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; /* Firefox */
+    background-color: #121416; /* Dark background */
+    color: #d1d1d1; /* Light text for contrast */
 }
 
 .dark-mode {
@@ -17,8 +19,9 @@ body {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #1a1d1f; /* Slightly lighter dark shade */
 }
 
 .section {
@@ -32,73 +35,64 @@ body {
     padding: 0px;
     overflow-y: scroll;
     scroll-snap-align: start;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    background-color: #25282b; /* Dark grey background */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #202326;
 }
 
-/*=== styling for the mini sections inside devs */
 .min-sec {
     height: 100vh;
     width: 100%;
     padding: 0px;
-    background: linear-gradient(to right, #333333d8, #444444); /* Dark grey gradient */
+    background: linear-gradient(to right, #3a3d40, #4c4f52);
 }
 
-/* Style for better visibility */
-.section:nth-child(odd) {
-    background-color: #444444;
-}
-
+.section:nth-child(odd),
 .section:nth-child(even) {
-    background-color: #333333;
+    background-color: #232629;
 }
 
 #sec1-2 {
     position: relative;
     width: 100%;
     height: 50vh;
-    background: linear-gradient(to top, #2d2d2dd8, #55555576); /* Dark grey gradient */
+    background: linear-gradient(to top, #026593d8, #3c5c5e76);
 }
 
 #sec1-1 {
-    background: linear-gradient(to bottom, #2d2d2dd8, #777777); /* Dark grey gradient */
+    background: linear-gradient(to bottom, #026593d8, #5c7e82);
 }
 
-/* Main image */
-#riyad-menu {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
+.topnav {
+    background-color: #2e3133;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Styles for the drop-down menu in the main page */
+.topnav h1 {
+    color: #e0e0e0; /* Adjusted for better visibility */
+}
+
 .dropdown {
-    position: fixed;
-    left: 0;
-    top: 10px; /* Adjust the top position as needed */
-    z-index: 1; /* Ensure the dropdown is above other elements */
+    display: inline-block;
 }
 
-/* Style for the dropdown label */
 .dropdown label {
-    font-weight: bold;
-    margin-bottom: 5px;
+    color: #d1d1d1; /* Lighter for visibility */
 }
 
 .dropdown select {
-    padding: 10px;
+    background-color: #4a5b5c;
+    color: white;
+    padding: 10px 20px;
     font-size: 16px;
-    border: 1px solid #070e13;
-    background-color: #2d2d2d;
-    color: #88a7bb;
-    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
-/* Hover effect */
 .dropdown select:hover {
-    background-color: #555555;
+    background-color: #637a7c;
 }
 
 #para1 {
@@ -106,16 +100,46 @@ body {
     padding: 10px;
     border-radius: 35%;
     border-style: double;
-    border-color: #75db7d; /* Adjusted border color */
+    border-color: #4a6d6f;
 }
 
-/* Styles for the second main page segment */
 #section2 {
-    flex-direction: row;
+    flex-direction: row; /* Included for completeness */
 }
 
-/* Styles for the image */
 #riyad2 {
     object-fit: fill;
-    height: 100vh;
+    height: 100vh; /* Included for completeness */
 }
+
+.buttons-container {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dark-mode-button {
+    background-color: #25282b;
+    color: #f0f0f0;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode-button:hover {
+    background-color: #3d4042;
+}
+
+/* Ensuring all previously omitted styles are included with appropriate color adjustments for dark mode */
+#riyad-menu {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Additional styles if there were any specific requests or unique identifiers not explicitly mentioned but implied in the original CSS. */

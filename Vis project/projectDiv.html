@@ -19,9 +19,8 @@
 
 
 <body>
-<div class="parent" id ="par1">
-    <div class="topnav">
-        <h1>Riyadh Tourism</h1>
+    <header>
+        head
         <div class="dropdown">
             <label for="menu">Menu:</label>
             <select id="menu" onchange="navigateToPage(this.value)">
@@ -30,12 +29,18 @@
                 <!-- Add more options as needed -->
             </select>
         </div>
+                    <button onclick="toggleDarkMode()">dark mode</button>
+
+    </header>
+<div class="parent" id ="par1">
+    <div class="topnav">
+        <h1>Riyadh Tourism</h1>
+        
     </div>
 
     <div class="section" id="section1">
         <div class="image" id="sec1-2"> 
             <img id="riyad-menu" src="images/riyad.png" alt="hello and welcome to saudia">
-            <button onclick="toggleDarkMode()">dark mode</button>
 
             
         </div>
@@ -52,13 +57,7 @@
             <img id="riyad2" src="images/Riyadh2.jpg" alt="hello and welcome to saudia">
 
 
-            <div class="dropdown">
-                <label for="menu">Menu:</label>
-                <select id="menu">
-                    <option value="home">Home</option>
-                    <!-- Add more options as needed -->
-                </select>
-            </div>
+           
         </div>
         <div class="min-sec" id="sec2-1">
             <p id="para1">this is saudi arabia, welcome to saudi arabia
@@ -70,8 +69,9 @@
         </div>
     </div>
     <div class="section" id="section3">
+        <img src="images/Jeddah.jpg" alt="Jeddah Image">
         <p>
-            Integer volutpat, eros a convallis suscipit, tortor justo aliquet arcu, at laoreet augue est vitae quam. Duis sit amet nisl vitae tellus consectetur feugiat. Nunc eu lectus ut risus bibendum gravida id ac turpis.
+            Jeddah, located on Saudi Arabia's western coast, is a historic city known as the "Gateway to Mecca." It blends a rich heritage with modern urban life, offering a unique experience with its Red Sea waterfront, bustling markets, and diverse population. <a href="Jeddah.html">Click here for more info on jeddah! </a>
         </p>
     </div>
     <div class="section" id="section4">
