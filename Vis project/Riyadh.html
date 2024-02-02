@@ -2,49 +2,113 @@
 <html>
     <head>
         <title>Riyadh tour sites</title>
-        <link rel="stylesheet" href="css/light-style.css" id="themeStyles"> 
+        <link rel="stylesheet" href="css\light-style.css" id="themeStyles"> 
         </head>
+        <script src="js\Script.js"></script>
     <body>
-        <div class="section" id="MainSec">
-            <header>
-                <h1>Riyadh Tourism</h1>
-                <p>Explore the beauty of Riyadh, a city that blends rich history with modern attractions.</p>
-            </header>
+        <header>
+            
+            <div class="dropdown">
+                <label for="menu">Menu:</label>
+                <select id="menu" onchange="navigateToPage(this.value)">
+                    <option value="home">Home</option>
+                    <option value="riyadh">Riyadh</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+         <button onclick="toggleDarkMode()">dark mode</button>
+    
+        </header>
+        <div class="R-main" id="MainSec">
+            <div class="headDiv">
+                 
+               
+
+                <img id="Main-pic" src="images\Riyadh-div2.jpg" alt="Riyadh sunset"  >
+                <div class="cent-text">Riyadh Tourism</div>
+                <p style="color: black;">Explore the beauty of Riyadh, a city that blends rich history with modern attractions.</p>
+         
+            </div>  
+            <div class="separator"></div>
+
         
             <section id="old-castles">
-                <h2>Old Castles</h2>
-                <p>Riyadh is home to several historic castles that showcase the city's cultural heritage. Explore the ancient architecture and learn about the stories behind these landmarks.</p>
-        
+               
                 <div class="castle">
-                    <img src="old-castle1.jpg" alt="Old Castle 1">
-                    <h3>Historic Castle 1</h3>
-                    <p>Discover the secrets of this ancient castle and its significance in Riyadh's history.</p>
+                    <img id="imgR" src="images\masmak.png" alt="Old Castle 1">
+                    <h3>Al masmak palace</h3>
+                    <p>Discover the secrets of this ancient palace and its significance in Riyadh's history.</p>
                 </div>
-        
+                <div class="separator"></div>
+
                 <div class="castle">
-                    <img src="old-castle2.jpg" alt="Old Castle 2">
-                    <h3>Historic Castle 2</h3>
-                    <p>Step back in time as you explore the corridors and chambers of this well-preserved castle.</p>
+                    <img id="imgR" src="images\murabaa.png" alt="Old Castle 2">
+                    <h3>Murabba Historical Palace</h3>
+                    <p>Riyadh is home to several historic castles, from it Al saud ruled their kingdom. 
+                        Explore the ancient architecture and learn about the stories this old palace holds.</p>
                 </div>
-            </section>
+            </section>  
+            <div class="separator"></div>
+
         
             <section id="new-sites">
                 <h2>New Sites</h2>
                 <p>Experience the modern charm of Riyadh with its contemporary attractions and futuristic landmarks.</p>
         
                 <div class="site">
-                    <img src="new-site1.jpg" alt="New Site 1">
-                    <h3>Modern Attraction 1</h3>
-                    <p>Enjoy the vibrant atmosphere and entertainment at one of Riyadh's newest attractions.</p>
+                    <!--             First site modern                      -->
+                    <img id="imgR" src="images\R-zoo.png" alt="New Site 1">
+                    <h3>Riyadh Zoo</h3>
+                    <p>Enjoy the vibrant atmosphere and the hundreds of unique animals from a hundred and ninty speacies of animals
+                        held at riyadh zoo.</p>
                 </div>
         
                 <div class="site">
-                    <img src="new-site2.jpg" alt="New Site 2">
-                    <h3>Modern Attraction 2</h3>
+                    <!---               second site modern                 -->
+                    <img id="imgKAFD" src="images\KAFD.png" alt="New Site 2">
+                    <h3>Kafd</h3>
                     <p>Explore the innovative architecture and cutting-edge facilities at this exciting new site.</p>
                 </div>
             </section>
-        
+            
+            <section id="tourism-table">
+                <h2>Tourism Sites Information</h2>
+                <table>
+                    <tr>
+                        <th>Site Name</th>
+                        <th>Location</th>
+                        <th>Opening Hours</th>
+                        <th>Ticket Price</th>
+                    </tr>
+                    <tr>
+                        <td>Masmak</td>
+                        <td>Old town District</td>
+                        <td>9 AM - 5 PM</td>
+                        <td>FREE</td>
+                    </tr>
+                    <tr>
+                        <td>Murabaa palace</td>
+                        <td>Al murabaa</td>
+                        <td>8 AM - 4 PM</td>
+                        <td>FREE</td>
+                    </tr>
+                    <tr>
+                        <td>Riyadh Zoo</td>
+                        <td>King Fahd Road</td>
+                        <td>10 AM - 4 PM</td>
+                        <td>FREE</td>
+                    </tr>
+                    <tr>
+                        <td>KAFD</td>
+                        <td>Al Olaya</td>
+                        <td>11 AM - 11 PM</td>
+                        <td>FREE</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </table>
+            </section>
+
+
             <footer>
                 <p>&copy; 2024 Riyadh Tourism. All rights reserved.</p>
             </footer>

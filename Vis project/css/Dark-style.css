@@ -55,7 +55,7 @@ body {
 #sec1-2 {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background: linear-gradient(to top, #026593d8, #3c5c5e76);
 }
 
@@ -96,11 +96,15 @@ body {
 }
 
 #para1 {
-    text-align: center;
-    padding: 10px;
-    border-radius: 35%;
-    border-style: double;
-    border-color: #4a6d6f;
+    position: absolute;
+            top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 32px;
+             font-family: 'calibri', sans-serif;
+             font-style: oblique;
+             font-weight: bold;
+             color: #CCCCCC;
 }
 
 #section2 {
@@ -143,3 +147,93 @@ body {
 }
 
 /* Additional styles if there were any specific requests or unique identifiers not explicitly mentioned but implied in the original CSS. */
+
+ /*              below code relates to the riyadh html                        */
+ .R-main{
+    position: relative;
+    
+}
+table {
+    
+    width: 70%; /* Full-width */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 20px auto; /* Margin for spacing */
+    font-size: 0.9em; /* Font size */
+    min-width: 400px; /* Minimum width */
+    box-shadow: 0 0 20px rgba(0,0,0,0.15); /* Shadow for 3D effect */
+}
+
+th, td {
+    padding: 12px 15px; /* Padding for cell content */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #000000; /* Bottom border for cells */
+}
+
+th {
+    background-color: #009879; /* Background color for the header */
+    color: #000000; /* Text color for the header */
+    font-weight: bold; /* Make header font bold */
+}
+
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+     /* Zebra stripes for rows */
+}
+
+tr:last-of-type {
+    border-bottom: 2px solid #009879; /* Add a solid line for the last row */
+}
+
+tr:hover {
+    background-color: #ffffff; /* Hover effect for rows */
+    cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+}
+tr{
+    color: #000000;
+}
+
+/*                      css for riyad.html images       */
+#imgKAFD{
+    width: 80%;
+    object-fit: cover;
+    height: 50vh;
+    object-position: top;
+}
+#imgR{
+    position: relative;
+    height: 50vh;
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+#Main-pic{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+.headDiv{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.R-main{
+    background: linear-gradient(to bottom left,#134367,#2e6a73);
+    text-align: center;
+}
+.cent-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    font-family: 'calibri', sans-serif;
+}
+.separator {
+    height: 2px; /* Thickness of the separator */
+    background-color: #CCCCCC; /* Color of the separator */
+    margin: 20px 0; /* Space above and below the separator */
+    opacity: 45%;
+  }
+/*               end for ryadh.html code               */
