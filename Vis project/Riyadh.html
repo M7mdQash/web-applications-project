@@ -11,8 +11,13 @@
             <div class="dropdown">
                 <label for="menu">Menu:</label>
                 <select id="menu" onchange="navigateToPage(this.value)">
-                    <option value="home">Home</option>
-                    <option value="riyadh">Riyadh</option>
+                    <option value="Main-pic">Home</option>
+                    <option value="cast1">Masmak</option>
+                    <option value="cast2">Murabaa</option>
+                    <option value="site1">Zoo</option>
+                    <option value="site2">Kafd</option>
+
+
                     <!-- Add more options as needed -->
                 </select>
             </div>
@@ -34,14 +39,14 @@
         
             <section id="old-castles">
                
-                <div class="castle">
+                <div class="castle" id="cast1">
                     <img id="imgR" src="images\masmak.png" alt="Old Castle 1">
                     <h3>Al masmak palace</h3>
                     <p>Discover the secrets of this ancient palace and its significance in Riyadh's history.</p>
                 </div>
                 <div class="separator"></div>
 
-                <div class="castle">
+                <div class="castle" id="cast2">
                     <img id="imgR" src="images\murabaa.png" alt="Old Castle 2">
                     <h3>Murabba Historical Palace</h3>
                     <p>Riyadh is home to several historic castles, from it Al saud ruled their kingdom. 
@@ -55,7 +60,7 @@
                 <h2>New Sites</h2>
                 <p>Experience the modern charm of Riyadh with its contemporary attractions and futuristic landmarks.</p>
         
-                <div class="site">
+                <div class="site" id="site1">
                     <!--             First site modern                      -->
                     <img id="imgR" src="images\R-zoo.png" alt="New Site 1">
                     <h3>Riyadh Zoo</h3>
@@ -63,7 +68,7 @@
                         held at riyadh zoo.</p>
                 </div>
         
-                <div class="site">
+                <div class="site" id="site2">
                     <!---               second site modern                 -->
                     <img id="imgKAFD" src="images\KAFD.png" alt="New Site 2">
                     <h3>Kafd</h3>

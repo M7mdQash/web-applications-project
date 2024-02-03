@@ -10,23 +10,8 @@ function toggleDarkMode() {
 }
 
 function navigateToPage(sectionId) {
-    // Prevent default action if it's necessary
-    // For a select dropdown, the default action does not need to be prevented.
-
-    // Find the element that corresponds to the id provided by the dropdown.
-    const targetElement = document.getElementById(sectionId);
-
-    if (targetElement) {
-        // Calculate the position of the target element.
-        const offset = 0; // Adjust this if you need some spacing above the target section.
-        const topPosition = targetElement.offsetTop - offset;
-
-        // Smooth scroll to the target element.
-        window.scrollTo({
-            top: topPosition,
-            behavior: 'smooth'
-        });
-    } else {
-        console.error("Element with id '" + sectionId + "' was not found.");
+    const section = document.getElementById(sectionId);
+    if(section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
