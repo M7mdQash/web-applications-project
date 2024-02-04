@@ -1,22 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/light-style.css" id="themeStyles">
-    <title>Medina Tourism</title>
-</head>
-<body>
-    <div class="section" id="medina-section">
-        <h2>Discover Medina</h2>
-        <img src="images/medina.jpg" alt="Medina Image">
-        <p>
-            Medina is a city of peace and tranquility.
-             It is home to the Prophet's Mosque,
-              which is the second holiest site in Islam. 
-              The city's historical and religious sites offer a deep insight into Islamic history.
-              
-        </p>
-    </div>
-</body>
+<html>
+    <head>
+        <title>Medina Tourism</title>
+        <link rel="stylesheet" href="css\light-style.css" id="themeStyles"> 
+        </head>
+        <script src="js\Script.js"></script>
+    <body>
+        <header>
+            
+            <div class="dropdown">
+                <label for="menu">Menu:</label>
+                <select id="menu" onchange="navigateToPage(this.value)">
+                    <option value="Main-pic">Home</option>
+                    <option value="cast1">Al Masjed An nbawy</option>
+                    <option value="cast2">Masjed Quaba</option>
+                    <option value="site1">Uhud mountain</option>
+                    <option value="site2">King Fahd Complex for the Printing of the Holy Quran</option>
+
+
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+         <button onclick="toggleDarkMode()">dark mode</button>
+    
+        </header>
+        <div class="R-main" id="MainSec">
+            <div class="headDiv">
+                 
+               
+
+                <img id="Main-pic" src="images/Night Masjed.jpg" alt="Medina"  >
+                <div class="cent-text">Medina Tourism</div>
+                <p style="color: black;">Medina is a city of peace and tranquility. It is home to the Prophet's Mosque, which is the second holiest site in Islam. The city's historical and religious sites offer a deep insight into Islamic history..</p>
+         
+            </div>  
+            <div class="separator"></div>
+
+        
+            <section id="old-castles">
+               
+                <div class="castle" id="cast1">
+                    <img id="imgR" src="images/Al Masjed Al nabawy inside.jpeg" alt="Al Masjed Al nabawy inside">
+                    <h3>Al Masjed Al nabawy</h3>
+                    <p>Al-Masjid an-Nabawi, or the Prophet's Mosque, is a magnificent structure that stands as a symbol of Islamic architecture. The exterior of the mosque showcases intricate designs and the spiritual significance it holds for Muslims worldwide.</p>
+                </div>
+                <div class="separator"></div>
+
+                <div class="castle" id="cast2">
+                    <img id="imgR" src="images/Masjed Qubaa.webp" alt="Masjed Qubaa">
+                    <h3>Masjed Qubaa</h3>
+                    <p>Masjid Quba is the first mosque built by Prophet Muhammad in Medina. It holds historical significance and is known for its unique architecture. Pilgrims often visit this mosque seeking blessings and spiritual solace.
+                    </p>
+                </div>
+            </section>  
+            <div class="separator"></div>
+
+        
+            <section id="new-sites">
+                <h2>ِAnother sites </h2>
+                <p></p>
+        
+                <div class="site" id="site1">
+                    <!--             First site modern                      -->
+                    <img id="imgR" src="images/Uhud.jpg" alt="Uhud">
+                    <h3>Uhud mountain</h3>
+                    <p> Mount Uhud, located just north of Medina, is a mountain steeped in history. It was the site of the Battle of Uhud, a significant event in Islamic history. Today, the mountain serves as a symbol of resilience and faith, attracting visitors for its panoramic views and historical importance.</p>
+                </div>
+        
+                <div class="site" id="site2">
+                    <!---               second site modern                 -->
+                    <img id="imgKAFD" src="images/Al Malek Fahad.jpg" alt="Al Malek Fahad">
+                    <h3>Al Malek Fahad complex</h3>
+                    <p>  The King Fahd Complex for the Printing of the Holy Quran is a prominent institution dedicated to producing and distributing copies of the Holy Quran. Located in Medina, it plays a crucial role in ensuring the widespread availability of the Quran to Muslims around the world.</p>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 Medina Tourism. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>
