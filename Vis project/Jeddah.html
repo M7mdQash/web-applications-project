@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/light-style.css" id="themeStyles">
-    
+    <link rel="stylesheet" href="css/JStyle.css" id="themeStyles">
+    <script src="js/Script.js"></script>
     <title>Discover Jeddah</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Jeddah</h1>
-        <img src="images/JeddahSign.webp" alt="Jeddah Image">
-        <p>Explore the beauty and culture of Jeddah, Saudi Arabia.</p>
+        <div class="dropdown">
+            <label for="menu">Menu:</label>
+            <select id="menu" onchange="navigateToPage(this.value)">
+                <option value="Home">Home</option>
+                <option value="Tourist Attraction Sites">Tourist Attraction Sites</option>
+                <option value="Historical Sites">Historical Sites</option>
+            </select>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Jeddah</h2>
-        <p>Introduce Jeddah and its significance as a city. Highlight its cultural, historical, and modern aspects.</p>
+    <section id="Home">
+        <h1>Welcome to Jeddah</h1>
+        <p>Explore the beauty and culture of Jeddah, Saudi Arabia.</p>
+        <img src="images/JeddahSign.png" alt="Jeddah Image" style="margin-bottom: 20px;">
     </section>
+
+    <hr>
 
     <section id="Tourist Attraction Sites">
         <h2>Tourist Attraction Sites</h2>
         <p>Discover Jeddah's most visited and iconic tourist destinations, showcasing a blend of modern marvels and historical treasures.</p>
 
-        <div class="site">
-            <img src="historic-site1.jpg" alt="2nd Site">
-            <h3> 2nd Site </h3>
-            <p>Describe this modern attraction and why it's a must-visit place in Jeddah.</p>
+        <div class="CityWalk">
+            <img src="images/CityWalk.png" alt="1st Site">
+            <h3>CityWalk</h3>
+            <p>Jeddah City Walk, in the heart of Jeddah, Saudi Arabia, is a vibrant promenade along the Red Sea coast. It features the iconic King Fahd Fountain, stunning seafront views, and a diverse range of shops, cafes, restaurants, and boutiques. This bustling destination offers shopping, dining, and entertainment, often hosting cultural events and art exhibitions, blending modernity with Arabian charm.</p>
+            <hr>
         </div>
 
-        <div class="site">
-            <img src="historic-site2.jpg" alt="2nd Site">
-            <h3>2nd Site </h3>
-            <p>Describe this modern attraction and why it's a must-visit place in Jeddah.</p>
+        <div class="JeddahCorniche">
+            <img src="images/JeddahCorniche.png" alt="2nd Site">
+            <h3>Jeddah Corniche</h3>
+            <p>Jeddah Corniche in Saudi Arabia is a stunning waterfront promenade along the Red Sea coast. It offers breathtaking views, a serene park with lush greenery, and outdoor activities. The iconic King Fahd Fountain adds grandeur to the skyline. With dining options, cafes, and recreational facilities, it's a perfect spot for families, couples, and friends to enjoy quality time in a tranquil coastal setting.</p>
         </div>
     </section>
 
@@ -41,17 +49,21 @@
         <h2>Historical Sites</h2>
         <p>Embark on a journey through time and experience the rich heritage of Jeddah by exploring its historical marvels.</p>
 
+        <hr>
+
         <div class="attraction">
-            <img src="modern-attraction1.jpg" alt="historic-site1">
-            <h3>Historic-site1</h3>
-            <p>Provide details about this historic site and its historical importance.</p>
+            <img src="images/AlBalad.png" alt="historic-site1">
+            <h3>Jeddah Al-Balad</h3>
+            <p>Jeddah Al-Balad, the historic heart of Jeddah, Saudi Arabia, is a captivating journey through time. This ancient district, with its centuries-old architecture and labyrinthine alleys, stands as a living testament to the city's rich heritage. The coral stone buildings adorned with intricate wooden balconies and latticework tell the story of a bustling trading port that has witnessed the ebb and flow of commerce and cultures for centuries. Al-Balad's historical significance is further underscored by its UNESCO World Heritage status, recognizing its unique architectural and cultural value. Visiting Jeddah Al-Balad is a journey that transports you to a bygone era, where history, architecture, and culture converge to create an immersive and unforgettable experience.</p>
+            <hr>
         </div>
 
         <div class="attraction">
-            <img src="modern-attraction2.jpg" alt="historic-site2">
-            <h3>Historic-site2</h3>
-            <p>Provide details about this historic site and its historical importance.</p>
+            <img src="images/Abruq.png" alt="historic-site2">
+            <h3>Abruq Ar Rugamah</h3>
+            <p>"Abruq Ar Rugamah," also known as "Abruq Island," is a remote natural gem situated in the Farasan Islands off the southwestern coast of Saudi Arabia. This picturesque island features pristine white sandy beaches, crystal-clear turquoise waters, and vibrant coral reefs, making it a paradise for snorkeling and diving enthusiasts. Beyond its marine wonders, Abruq Ar Rugamah offers a serene escape, serving as a habitat for migratory and resident birds, and providing a tranquil retreat for nature lovers seeking solace amidst its unspoiled beauty. With its pristine charm and secluded allure, Abruq Ar Rugamah beckons to those in search of an untouched paradise.</p>
         </div>
     </section>
 </body>
 </html>
+
