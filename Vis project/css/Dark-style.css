@@ -62,6 +62,15 @@ body {
 #sec1-1 {
     background: linear-gradient(to bottom, #026593d8, #5c7e82);
 }
+#sec2-2{
+    position: relative;
+   
+    
+    /* Set the width and height of the div to match the image size */
+    width: 100%; /* adjust to the desired width */
+    height: 100vh; /* adjust to the desired height */
+    background: linear-gradient(to top,#04850fd8,#c3e2c676);
+}
 
 .topnav {
     background-color: #2e3133;
@@ -105,6 +114,17 @@ body {
              font-style: oblique;
              font-weight: bold;
              color: #CCCCCC;
+}
+#para2{
+    position: absolute;
+    top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 42px;
+     font-family: 'calibri', sans-serif;
+     font-style: oblique;
+     font-weight: bold;
+     color: #CCCCCC;
 }
 
 #section2 {
