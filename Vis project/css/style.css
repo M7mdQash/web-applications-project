@@ -13,6 +13,7 @@ body, h1, h2, p {
 }
 
 body {
+    background-color: rgb(231, 255, 255);
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
