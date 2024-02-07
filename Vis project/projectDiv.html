@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/light-style.css" id="themeStyles">
-    <!--this is the link to the style sheet-->
     <script>
     
     </script>
@@ -20,75 +19,82 @@
 
 <body>
     <header>
-        
-        <div class="dropdown">
-            <label for="menu">Menu:</label>
-            <select id="menu" onchange="navigateToPage(this.value)">
-                <option value="section1">Home</option>
-                <option value="sec2-2">Riyadh</option>
-                <option value="section3">Jeddah</option>
-                <option value="section-mecca">Mecca</option>
-                <option value="section-medina">Medina</option>
-                <option value="section-taif">Taif</option>
-                <!-- Add more options as needed -->
-            </select>
-        </div>
-                    <button onclick="toggleDarkMode()">dark mode</button>
+        <div id="menu">
+            <div id="menu-items"> 
+                <a href="mecca.html" class="menu-item">
+                <div class="menu-item">Mecca</div> </a>
+                <a href="medina.html" class="menu-item">
+                <div class="menu-item">Medina</div> </a>
+                <a href="riyadh.html" class="menu-item">
+                <div class="menu-item">Riyadh</div> </a>
+                <a href="jeddah.html" class="menu-item">
+                <div class="menu-item">Jeddah</div> </a>
+              <div class="menu-item">newsletter</div></a>
+                
+              <button onclick="toggleDarkMode()">dark mode</button>
+            </div>
+            <div id="menu-background-pattern"></div>
+            <div id="menu-background-image"></div>
+          </div>
+                    
 
     </header>
-<div class="parent" id ="par1">
-    <div class="topnav">
-        <h1>Riyadh Tourism</h1>
+
         
     </div>
 
     <div class="section" id="section1">
         <div class="image" id="sec1-2"> 
             <img id="riyad-menu" src="images/riyad.png" alt="hello and welcome to saudia">
-            <p id="para1">Saudi arabian tourism
+            <p id="para1">Saudi Arabia Tourism.
             </p>
-            
+            <div>
+            <p class="info">
+                Saudi Arabia, a land of historical depth and cultural richness, offers an intriguing mix of traditional and modern attractions. From the ancient rock carvings of Al-Ula and the bustling streets of Riyadh to the spiritual cities of Mecca and Medina, the kingdom invites exploration. Jeddah's coastline and Taif's mountainous landscapes provide scenic beauty, while the futuristic city of NEOM symbolizes the country's vision for the future. Saudi Arabia's diverse landscapes, from deserts to seas, complement its heritage sites, making it a unique travel destination.            </div>
         </div>
         
         
     </div>
-    <div class="section" id="section2">
+    <div class="section" id="section-Riyadh">
         <div class="image" id="sec2-2"> 
             <a href="Riyadh.html" style="width: 100%; height: 100vh;">
                 <img id="riyad2" src="images/Riyadh2.jpg" alt="hello and welcome to saudia"></a>
 
-                <p id="para2" >Tourism in Riyadh
-                </p>
-           
+                <p id="para2" >Riyadh, the capital city. </p>
+                
         </div>
+        <div>
+            <p class="info">
+                Riyadh, the capital city, is a dynamic metropolis blending modernity with heritage. The city is known for its skyscrapers, including the iconic Kingdom Centre, alongside historical sites like the Masmak Fortress and the bustling traditional markets. Riyadh's museums, parks, and business centers reflect the kingdom's rapid development and its role as a cultural and economic hub.         </p>
+            </div>
        
     </div>
-    <div class="section" id="section3">
+    <div class="section" id="section-jeddah">
         <img src="images/Jeddah.jpg" alt="Jeddah Image">
-        <p>
+        <p class="info">
             Jeddah, located on Saudi Arabia's western coast, is a historic city known as the "Gateway to Mecca." It blends a rich heritage with modern urban life, offering a unique experience with its Red Sea waterfront, bustling markets, and diverse population. <a href="Jeddah.html">Click here for more info on jeddah! </a>
         </p>
     </div>
     <div class="section" id="section-mecca">
-        <p id="makkah1">
-            The best place in the world, Umm Al-Qura, Mecca
-        </p>
+       
         <a href="mecca.html" style="width: 100%; height: 90%;"><img id="makkah" src="images/makkah.jpg" style="width: 100%; height: 100%; "></a>
              
-        <!-- Content or image for Mecca -->
+        <p class="info">
+            Mecca is the spiritual heart of the Islamic world, home to the Holy Kaaba in the Masjid al-Haram, Islam's holiest site. Pilgrims from around the globe perform the Hajj, an annual pilgrimage required of Muslims. The city's religious significance and rich history make it a pivotal destination, offering insights into Islamic traditions and the profound sense of unity among the faithful.        </p>
+    
     </div>
+    
     <div class="section" id="section-medina">
         <a href="Medina.html">Medina Tourism</a>
         <img id="Medina" src="images/medina.jpeg" alt="medina.jpeg">
-        <p>
-            The second best place in the world, Prophet Mohmmad's city, Al-Medina.
-        </p>
-        <!-- Content or image for Medina -->
+        <p class="info">
+            Medina, revered as the Prophet Muhammad's final resting place, holds immense religious importance. Al-Masjid an-Nabawi, the Prophet's Mosque, stands as a monumental site for visitors. The city's tranquil ambiance, historical mosques, and the sacred Uhud Mountain offer a profound spiritual experience, drawing millions of pilgrims and visitors seeking peace and reflection.        </p>
     </div>
     
     <div class="section" id="section-taif">
         <a href="Taif.html">Taif Tourism</a>
-        <!-- Content or image for Taif -->
+        <img id="Taif" src="images/Taif.jpeg" alt="medina.jpeg">
+        <p class="info">Taif, known as the "City of Roses," is a popular tourist destination in Saudi Arabia, celebrated for its pleasant climate, lush landscapes, and rich cultural heritage. Nestled in the mountains, it offers a respite from the desert heat, attracting visitors with its beautiful parks, gardens, and traditional markets. Key attractions include the Al-Hada Mountain for its stunning views and cable car rides, the Shubra Palace showcasing Islamic and Hejazi architecture, and the vibrant Souq Okaz for cultural experiences. Taif's rose farms and the annual Rose Festival highlight its agricultural significance and traditional rosewater distillation practices.</p>
     </div>
 </div>
 </body>
