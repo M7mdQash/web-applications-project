@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>newsletter</title>
+<style type="text/css">
+label {
+  width: 80px;
+  display: inline-block;
+  margin: 2px;
+}
+input, select {
+  width: 150px;
+  margin: 2px;
+}
+</style>
+<script>
+function validateForm() {
+  // Validate Name
+  var name = document.forms["myForm"]["Name"].value;
+  if (!/^[A-Za-z][A-Za-z0-9]*$/.test(name)) {
+    alert("Name must start with a letter and contain only alphanumeric characters.");
+    return false;
+  }
+  
+  // Validate Email
+  var email = document.forms["myForm"]["EMail"].value;
+  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/.test(email)) {
+    alert("Please enter a valid email address.");
+    return false;
+  }
+  
+  // Validate Zip Code
+  var zip = document.forms["myForm"]["Zip"].value;
+  var country = document.forms["myForm"]["Country"].value;
+  var zipRegex;
+  if (country === "1" || country === "2") { // KSA or OMAN
+    zipRegex = /^\d{5}$/;
+  } else if (country === "3") { // UK
+    zipRegex = /^[A-Za-z]{1,2}\d{2}$/;
+  } else {
+    alert("Please select a country.");
+    return false;
+  }
+  
+  if (!zipRegex.test(zip)) {
+    alert("Please enter a valid zip code.");
+    return false;
+  }
+  
+  // If all validations pass
+  return true;
+}
+</script>
+</head>
+<body>
+
+<h2>newsletter form</h2>
+
+<form action="page.jsp" name="newsletter" onsubmit="return validateForm();">
+ <fieldset>
+ <legend>Contact Informtaion:</legend>
+<label for="Name">Name:</label><input type="text" name="Name"  /> <br>
+<label for="EMail">EMail:</label><input type="text" name="EMail" required />
+<br>
+<label for="Zip">Zip Code:</label><input type="text" name="Zip"  />
+<br>
+<label for="Country">Country:</label>
+<select name="Country" >
+ <option value="-1" selected>[choose yours]</option>
+ <option value="1">KSA</option>
+ <option value="2">OMAN</option>
+ <option value="3">UK</option>
+ <option value="4">Other</option>
+</select> <br> <br>
+<input type="submit" value="Submit" /> <legend>*Name, zip code and cournty are optional</legend>
+ </fieldset>
+</form>
+
+</body>
+</html>
